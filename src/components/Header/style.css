@@ -1,0 +1,14 @@
+/* sizing of links */
+a{
+  font-size: 22px;
+}
+
+/* nav button */
+#tButton{
+  border-color: white;
+}
+
+/* H1 Name */
+#fancy{
+  font-family: 'Lucida Bright', Geneva, Copperplate;
+}
