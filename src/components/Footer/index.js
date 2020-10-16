@@ -3,8 +3,10 @@ import "./style.css";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <span>LinkedUp { new Date().getFullYear() }</span>
+    <footer>
+      <div>
+        <p className="text-white">&copy; Property of Corey Post</p>
+      </div>
     </footer>
   );
 }
