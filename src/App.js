@@ -9,16 +9,18 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Wrapper>
-        <Route exact path="/" component={Index}/>
-        <Route exact path="/about" component={About}/>
-        <Route exact path="/portfolio" component={Portfolio}/>
-        <Route exact path="/contact" component={Contact}/>
-      </Wrapper>
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Header />
+          <Wrapper>
+            <Route exact path="/" component={Index}/>
+            <Route exact path="/about" component={About}/>
+            <Route exact path="/portfolio" component={Portfolio}/>
+            <Route exact path="/contact" component={Contact}/>
+          </Wrapper>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
