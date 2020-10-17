@@ -3,11 +3,11 @@ import React from "react";
 function About(){
     return(
         // <!-- About me -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center text-light p-5">
+        <div className="container">
+            <div className="row">
+                <div className="col-md-12 text-center text-light p-5">
                     {/* <!--About Me Section--> */}
-                    <h1 class="border-bottom border-light text-left mb-5">About Me</h1>
+                    <h1 className="border-bottom border-light text-left mb-5">About Me</h1>
                     {/* <!--Image of me--> */}
                     <img src="assets/images/Me.jpg" class="img-fluid float-left p-5" alt="Me" /> 
                     <p> My Name is Corey Post, I am a father and husband. I have ten plus years of experience working on cars which has trained and helped me
@@ -27,7 +27,7 @@ function About(){
                     </p>
                 </div>
             </div>
-            <div class="row pt-3"></div>
+            <div className="row pt-3"></div>
         </div>
     );
 }
