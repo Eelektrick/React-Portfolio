@@ -1,0 +1,12 @@
+/* styling of h5 */
+h5{
+    color: white;
+}
+
+div > a{
+    color: black;
+}
+
+div > a:hover{
+    color: crimson;
+}
