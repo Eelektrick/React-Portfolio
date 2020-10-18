@@ -15,3 +15,7 @@
 footer{
     position:absolute;
 }
+
+div > a:hover{
+    color: crimson;
+}

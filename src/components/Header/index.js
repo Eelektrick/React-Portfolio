@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Resume from "./CoreyPostResume.pdf";
+import {HashLink as Link} from "react-router-hash-link";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
