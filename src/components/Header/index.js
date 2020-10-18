@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import Resume from "./CoreyPostResume.pdf";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
@@ -12,17 +13,17 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarMenu">
           <ul className="navbar-nav ml-auto navFont">
               <li className="nav-item">
-                  <a className="nav-link text-white" href="aboutme.html">About Me</a>
+                  <a className="nav-link text-white" to="/about">About Me</a>
               </li>
               <li className="nav-item">
                 {/*Found the code to open resume in a different tab from stack overflow*/}
-                  <a className="nav-link text-white" target="_blank" rel="noopener noreferrer" href="assets/images/CoreyPostResume.pdf">Resume</a>
+                  <a className="nav-link text-white" target="_blank" rel="noopener noreferrer" href={Resume}>Resume</a>
               </li>
               <li className="nav-item">
-                  <a className="nav-link text-white" href="portfolio.html">Portfolio</a>
+                  <a className="nav-link text-white" to="/portfolio">Portfolio</a>
               </li>
               <li className="nav-item">
-                  <a className="nav-link text-white" href="contact.html">Contact</a>
+                  <a className="nav-link text-white" to="/contact">Contact</a>
               </li>
           </ul>
       </div>
