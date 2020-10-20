@@ -1,3 +1,8 @@
 .row{
     padding-left: 150px;
 }
+
+#me{
+    height: 400px;
+    width: 350px;
+}

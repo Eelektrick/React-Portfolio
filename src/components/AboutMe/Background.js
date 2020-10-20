@@ -11,7 +11,7 @@ function Background(){
                     {/* <!--About Me Section--> */}
                     <h1 className="border-bottom border-light text-left mb-5">About Me</h1>
                     {/* <!--Image of me--> */}
-                    <img src={MyImg} className="img-fluid float-left p-5" alt="Me" /> 
+                    <img src={MyImg} className="img-fluid float-left p-5" id="me" alt="Me" /> 
                     <p> My Name is Corey Post, I am a father and husband. I have ten plus years of experience working on cars which has trained and helped me
                     with creating problem solving skills and be able to adapt to the unexpected when things do not go as planned and test my 
                     time management skills to get the job done effiecently and on time.

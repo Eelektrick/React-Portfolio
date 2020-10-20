@@ -1,60 +1,42 @@
-import React from "react";
+import React, {useState} from "react";
+import "./style.css";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 function Card(props){
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return(
-        <div>
-      <section
-        className="container-section scrollspy"
-        id="portfolio"
-        style={{ margin: "20px" }}
-      >
-        <div className="col s12 m3 l3">
-          <div className="card">
-            <div className="card-image waves-effect waves-block waves-light">
-              <img className="activator" alt="project's img" src={props.img} />
+        <div className="container">
+            <div className="row">
+                <div className="p-4 col-md-6">
+                    <img className="img-fluid" id="projects" alt="portfolio imgs"  src={props.img} />
+                    <div className="text-center">
+                        <h2 className="text-center">{props.name}</h2>
+                        <a href={props.deployLink} className="text-light link">Website</a>
+                        <>
+                            <a variant= "light" className="p-4 m-5 text-light link" onClick={handleShow}>
+                                Information
+                            </a>
+                            <Modal show={show} onHide={handleClose}>
+                                <Modal.Header closeButton>
+                                <Modal.Title>Modal heading</Modal.Title>
+                                </Modal.Header>
+                                    <Modal.Body>{props.detail}</Modal.Body>
+                                <Modal.Footer>
+                                    <Button variant="secondary" onClick={handleClose}>
+                                        Close
+                                    </Button>
+                                </Modal.Footer>
+                            </Modal>
+                        </>
+                        <a href={props.githubLink} className="text-light link">Github</a>
+                    </div>
+                </div>
             </div>
-            <div className="card-content" style={{ backgroundColor: "black" }}>
-              <span
-                className="card-title activator white-text"
-                style={{ fontSize: "20px" }}
-              >
-                {props.name}
-                <i className="material-icons right">more_vert</i>
-              </span>
-              <p>
-                <a
-                  className="btn-small"
-                  href={props.deployLink}
-                  style={{ marginTop: "10px", marginRight: "10px" }}
-                >
-                  <FaWindowMaximize style={{ marginTop: "10px" }} />
-                </a>
-                <a
-                  className="btn-small"
-                  href={props.githubLink}
-                  style={{ marginTop: "10px" }}
-                >
-                  <FaGithub style={{ marginTop: "10px" }} />
-                </a>
-              </p>
-            </div>
-            <div className="card-reveal" style={{ backgroundColor: "black" }}>
-              <span className="card-title activator" style={{ color: "white" }}>
-                {props.name}
-                <i
-                  className="material-icons right"
-                  style={{ color: "white" }}
-                  data-rel={props.id}
-                >
-                  close
-                </i>
-              </span>
-              <p>{props.detail}</p>
-            </div>
-          </div>
         </div>
-      </section>
-    </div>
     );
 }
 

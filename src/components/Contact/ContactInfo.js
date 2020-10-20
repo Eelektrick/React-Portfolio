@@ -9,7 +9,7 @@ function ContactInfo(){
         <div className="container-md mt-4 p-2 pb-5 mb-5">
             <div className="row mt-3 mr-5 pr-5">
                 <div className="col-md-12 text-center">
-                    <h1 className="text-light">Contact Information</h1>    
+                    <h1 className="border-bottom border-light text-light">Contact Information</h1>    
                     <img src={ContactImg} id="contactImg" className="img-fluid justify-content-center p-4" alt="Me and my family" />
                     <h5>Looking to build a new Website or update your current one? </h5>
                     <h5>I am currently open to help as a full stack developer, freelance or as part of a team. </h5> 
