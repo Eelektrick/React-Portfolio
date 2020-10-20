@@ -57,5 +57,5 @@ completely start new to make the code work in react.
 
 # Screenshot
 
-![screenshot of index page]()
-![screenshot of portfolio page]()
+![screenshot of index page](./public/main.PNG)
+![screenshot of portfolio page](./public/portfolio.PNG)
