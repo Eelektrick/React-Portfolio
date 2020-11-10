@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./style.css";
-import Resume from "./CoreyPostResume.pdf";
+import Resume from "./Corey Post Resume.pdf";
 import {HashLink as Link} from "react-router-hash-link";
 
 // got navbar button code from https://medium.com/@johnne01/how-to-toggle-bootstrap-navbar-collapse-button-in-react-without-jquery-1d5c2fb0751c
